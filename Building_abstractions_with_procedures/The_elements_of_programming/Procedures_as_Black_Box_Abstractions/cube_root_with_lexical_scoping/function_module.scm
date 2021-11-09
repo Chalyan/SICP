@@ -6,5 +6,4 @@
     
     (define (cube x)
         (* x (square x))))
-
-(import functions)
+     
