@@ -6,4 +6,3 @@
     
     (define (cube x)
         (* x (square x))))
-

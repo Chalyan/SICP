@@ -12,4 +12,3 @@
     (test-assert (< (abs (- (cube_root 2) 1.26)) 0.014)))
 
 (test-exit)
-

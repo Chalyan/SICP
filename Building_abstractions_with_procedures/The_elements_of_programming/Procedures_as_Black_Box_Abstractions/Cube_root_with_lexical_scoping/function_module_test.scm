@@ -18,4 +18,3 @@
     (test (- 27) (cube (- 3))))
 
 (test-exit)
-
