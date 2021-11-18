@@ -1,6 +1,7 @@
-(include "function_module.scm")
+(include "../../Cube_function/Cube_function_source_files/cube_function_implementation.scm")
 
-(import functions)
+(import cube_func)
+(import square_func)
 
 (define (cube_root number)
 
