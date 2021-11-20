@@ -1,6 +1,6 @@
 (import test)
 
-(include "../Cube_function_source_files/cube_function_implementation.scm")
+(include "../Sources/implementation.scm")
 
 (import cube_func)
 
