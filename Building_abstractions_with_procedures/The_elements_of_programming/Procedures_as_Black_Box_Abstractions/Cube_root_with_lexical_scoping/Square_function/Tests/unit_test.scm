@@ -4,7 +4,7 @@
 
 (import square_func)
 
-(test-group "Square function tests"
+(test-group "'Square function' tests"
     (test 0 (square 0))
     (test 1 (square 1))
     (test 1 (square (- 1)))

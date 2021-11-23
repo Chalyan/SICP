@@ -4,7 +4,7 @@
 
 (import cube_func)
 
-(test-group "Cube function tests"
+(test-group "'Cube function' tests"
     (test 0 (cube 0))
     (test 1 (cube 1))
     (test (- 1) (cube (- 1)))
