@@ -7,6 +7,6 @@
         
         (define random-positive (generator))
     
-            (if (= random-positive 0)
-                0.1
-                random-positive)))
+        (if (= random-positive 0)
+            0.1
+            random-positive)))
