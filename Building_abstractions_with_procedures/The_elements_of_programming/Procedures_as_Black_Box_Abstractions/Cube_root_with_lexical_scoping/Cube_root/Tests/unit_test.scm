@@ -1,6 +1,6 @@
 (import test)
 
-(include "../Sources/implementation.scm")
+(include "../Sources/kernel.scm")
 
 (test-group "'Cube root' tests"
     (test-assert (< (abs (- (cube_root (- 27)) (- 3))) 0.000000014))
