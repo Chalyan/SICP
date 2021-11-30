@@ -1,8 +1,4 @@
 # The SICP book
-#
-# To <i>make</i> the <i>Makefile</i> of <i>Building_abstractions_with_procedures/The_elements_of_programming/Procedures_as_Black_Box_Abstractions/Cube_root_with_lexical_scoping</i>,
-# please type:
-# <p>export CSI=<i>'INTERPRETER-NAME'</i>; make all</p>,
-# where <i>'INTERPRETER-NAME'</i> is the name of interpreter, 
-# You are using at the moment.
-#
+
+To run all the tests via ***make*** command, please type:
+*export CSI='INTERPRETER-NAME'; make all_tests*, where *'INTERPRETER-NAME'* is the name of interpreter, You are using at the moment.
