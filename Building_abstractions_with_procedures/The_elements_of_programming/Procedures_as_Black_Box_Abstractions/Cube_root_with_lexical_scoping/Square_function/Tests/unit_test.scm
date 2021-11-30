@@ -1,6 +1,6 @@
 (import test)
 
-(include "../Sources/kernel.scm")
+(include "../Sources/square.scm")
 
 (import square_func)
 

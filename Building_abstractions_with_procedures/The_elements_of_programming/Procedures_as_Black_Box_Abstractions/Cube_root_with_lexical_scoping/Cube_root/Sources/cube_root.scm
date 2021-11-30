@@ -1,4 +1,4 @@
-(include "../../Cube_function/Sources/kernel.scm")
+(include "../../Cube_function/Sources/cube.scm")
 
 (import cube_func)
 (import square_func)

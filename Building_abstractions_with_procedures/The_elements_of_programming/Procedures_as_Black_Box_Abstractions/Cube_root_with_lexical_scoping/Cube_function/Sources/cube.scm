@@ -1,4 +1,4 @@
-(include "../../Square_function/Sources/kernel.scm")
+(include "../../Square_function/Sources/square.scm")
 
 (module cube_func (cube)
 

@@ -2,8 +2,8 @@
 (import test)
 (import test-generative)
 
-(include "../Sources/kernel.scm")
-(include "../../Random_positive_number_generator/Sources/kernel.scm")
+(include "../Sources/cube_root.scm")
+(include "../../Random_positive_number_generator/Sources/rand_pos_num_gen.scm")
 
 (import rand_pos_num)
 

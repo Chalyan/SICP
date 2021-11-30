@@ -2,7 +2,7 @@
 (import test)
 (import test-generative)
 
-(include "../Sources/kernel.scm")
+(include "../Sources/rand_pos_num_gen.scm")
 
 (import rand_pos_num)
 
