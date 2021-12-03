@@ -1,4 +1,4 @@
-(include "../../Cube_function/Cube_function_source_files/cube_function_implementation.scm")
+(include "../../Cube_function/Sources/cube.scm")
 
 (import cube_func)
 (import square_func)

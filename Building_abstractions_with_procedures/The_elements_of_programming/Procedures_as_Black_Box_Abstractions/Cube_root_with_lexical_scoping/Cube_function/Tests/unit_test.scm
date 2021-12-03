@@ -1,10 +1,10 @@
 (import test)
 
-(include "../Cube_function_source_files/cube_function_implementation.scm")
+(include "../Sources/cube.scm")
 
 (import cube_func)
 
-(test-group "Cube function tests"
+(test-group "'Cube function' tests"
     (test 0 (cube 0))
     (test 1 (cube 1))
     (test (- 1) (cube (- 1)))

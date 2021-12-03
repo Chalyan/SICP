@@ -1,10 +1,10 @@
 (import test)
 
-(include "../Square_function_source_files/square_function_implementation.scm")
+(include "../Sources/square.scm")
 
 (import square_func)
 
-(test-group "Square function tests"
+(test-group "'Square function' tests"
     (test 0 (square 0))
     (test 1 (square 1))
     (test 1 (square (- 1)))
