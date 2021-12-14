@@ -1,4 +1,7 @@
-all_tests: square cube random-positive-number cube-root
+all_tests: chicken-module-installer square cube random-positive-number cube-root
+
+chicken-module-installer:
+	chicken-install -s test test-generative srfi-1
 
 square:
 	cd Building_abstractions_with_procedures/The_elements_of_programming/Procedures_as_Black_Box_Abstractions/Cube_root_with_lexical_scoping/Square_function/Tests && \
