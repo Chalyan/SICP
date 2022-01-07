@@ -1,4 +1,5 @@
-all_tests: chicken-module-installer square cube random-positive-number cube-root
+all_tests: chicken-module-installer square cube random-positive-number cube-root \
+			tree-recursion-iterative tree-recursion-recursive
 
 chicken-module-installer:
 	chicken-install -s test test-generative srfi-1
@@ -17,4 +18,12 @@ random-positive-number:
 
 cube-root:
 	cd Building_abstractions_with_procedures/The_elements_of_programming/Procedures_as_Black_Box_Abstractions/Cube_root_with_lexical_scoping/Cube_root/Tests && \
+	$(CSI) unit_test.scm && $(CSI) pbt.scm
+
+tree-recursion-iterative:
+	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Tree_recursion/Exercise_1.11/Iterative/Tests && \
+	$(CSI) unit_test.scm && $(CSI) pbt.scm
+
+tree-recursion-recursive:
+	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Tree_recursion/Exercise_1.11/Recursive/Tests && \
 	$(CSI) unit_test.scm && $(CSI) pbt.scm
