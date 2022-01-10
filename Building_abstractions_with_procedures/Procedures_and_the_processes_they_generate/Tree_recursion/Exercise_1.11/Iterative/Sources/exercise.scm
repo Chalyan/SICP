@@ -14,5 +14,4 @@
 
                 ((> (- number 1) comparable)
                     (f_iter comparable (+ coefficient-of-two coefficient-of-one)
-                        (+ (* 2 coefficient-of-two) coefficient-of-zero) (* 3 coefficient-of-two) (- number 1)))
-                )))
+                        (+ (* 2 coefficient-of-two) coefficient-of-zero) (* 3 coefficient-of-two) (- number 1))))))
