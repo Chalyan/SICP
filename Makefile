@@ -1,5 +1,5 @@
 all_tests: chicken-module-installer square cube random-positive-number cube-root \
-			tree-recursion-iterative tree-recursion-recursive
+			tree-recursion-iterative tree-recursion-recursive pascals-triangle
 
 chicken-module-installer:
 	chicken-install -s test test-generative srfi-1
@@ -27,3 +27,7 @@ tree-recursion-iterative:
 tree-recursion-recursive:
 	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Tree_recursion/Exercise_1.11/Recursive/Tests && \
 	$(CSI) unit_test.scm && $(CSI) pbt.scm
+
+pascals-triangle:
+	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Tree_recursion/Exercise_1.12/Tests && \
+	$(CSI) unit_test.scm
