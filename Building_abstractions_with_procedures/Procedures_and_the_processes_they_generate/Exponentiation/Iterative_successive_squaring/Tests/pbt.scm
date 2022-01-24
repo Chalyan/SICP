@@ -33,4 +33,13 @@
             (and (or (< (fast-expt positive-number exponent) positive-number) (= (fast-expt positive-number exponent) positive-number)) 
                  (or (< (abs (fast-expt negative-number exponent)) (abs negative-number)) (= (abs (fast-expt negative-number exponent)) (abs negative-number)))))))
 
+(test-group "'Iterative exponentiation' pbt tests for numbers, which have absolute values greater than or equal to 1, and positive exponents"
+    (test-generative ((positive-number (lambda () (+ (* (pseudo-random-real) 9) 1)))
+                     (negative-number (lambda () (- (+ (* (pseudo-random-real) 9) 1))))
+                     (exponent (lambda () (+ (pseudo-random-integer 5) 1))))
+        (test-assert "For any number in the range, the absolute value of number is less than or equal to the absolute value of function" 
+            (and (or (> (fast-expt positive-number exponent) positive-number) (= (fast-expt positive-number exponent) positive-number)) 
+                 (or (> (abs (fast-expt negative-number exponent)) (abs negative-number)) (= (abs (fast-expt negative-number exponent)) (abs negative-number)))))))
+
+
 (test-exit)
