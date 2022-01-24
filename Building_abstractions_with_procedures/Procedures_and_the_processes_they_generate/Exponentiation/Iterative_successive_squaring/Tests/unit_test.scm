@@ -12,6 +12,8 @@
     (test 2 (fast-expt 2 1))
     (test 4 (fast-expt 2 2))
     (test 9 (fast-expt (- 3) 2))
+    (test 625 (fast-expt 5 4))
+    (test (- 125) (fast-expt (- 5) 3))
     (test (- 7) (fast-expt (- 7) 1)))
 
 (test-exit)

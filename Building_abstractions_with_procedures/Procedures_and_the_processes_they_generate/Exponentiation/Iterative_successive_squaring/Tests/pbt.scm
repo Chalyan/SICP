@@ -11,12 +11,11 @@
 (import rand_pos_num)
 
 (test-group "'Iterative exponentiation' pbt tests for negative numbers with positive exponents"
-    (test-generative ((number (lambda () (- (* (get_a_random_positive_number pseudo-random-real) 10))))
-                     (exponent (lambda () (+ (pseudo-random-integer 5) 1))))
-        (test-assert "For any negative number and odd exponent, the value of function is negative" 
-            (negative? (fast-expt number exponent)))
-        (test-assert "For any negative number and even exponent, the value of function is positive" 
-            (positive? (fast-expt number exponent)))))
+    (test-generative ((number (lambda () (- (* (get_a_random_positive_number pseudo-random-real) 10)))))
+        (test-assert "For any negative number with odd exponent, the value of function is negative" 
+            (negative? (fast-expt number 5)))
+        (test-assert "For any negative number with even exponent, the value of function is positive" 
+            (positive? (fast-expt number 4)))))
 
 (test-group "'Iterative exponentiation' pbt tests for positive numbers with non negative exponents"
     (test-generative ((number (lambda () (* (get_a_random_positive_number pseudo-random-real) 10)))
@@ -32,6 +31,6 @@
                      (exponent (lambda () (+ (pseudo-random-integer 5) 1))))
         (test-assert "For any number in the range, the absolute value of number is greater than or equal to the absolute value of function" 
             (and (or (< (fast-expt positive-number exponent) positive-number) (= (fast-expt positive-number exponent) positive-number)) 
-                 (or (< (abs (fast-expt negative-number exponent)) negative-number) (= (abs (fast-expt negative-number exponent)) negative-number))))))
+                 (or (< (abs (fast-expt negative-number exponent)) (abs negative-number)) (= (abs (fast-expt negative-number exponent)) (abs negative-number)))))))
 
 (test-exit)
