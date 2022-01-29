@@ -4,7 +4,7 @@
     
     (import scheme)
     
-    (import square_func)    
+    (import square_func)
     
     (define (fast-expt number exponent)
         (fast-expt-iter number exponent 1))
