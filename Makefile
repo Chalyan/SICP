@@ -43,4 +43,5 @@ smallest-divisor:
 
 smallest-divisor-with-next-function:
 	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Testing_for_primality/Exercise_1.23/Tests && \
-	$(CSI) next_divisor_tests.scm && $(CSI) smallest_divisor_tests.scm
+	$(CSI) next_divisor_tests.scm && $(CSI) smallest_divisor_tests.scm && $(CSI) report_time_tests.scm && $(CSI) prime_tests.scm && \
+	$(CSI) prime_output_tests.scm
