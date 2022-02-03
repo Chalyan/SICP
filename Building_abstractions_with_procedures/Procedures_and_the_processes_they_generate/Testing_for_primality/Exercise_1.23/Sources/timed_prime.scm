@@ -1,4 +1,4 @@
-(include "../Sources/prime_output.scm")
+(include "../Sources/start_prime_test.scm")
 
 (module timed-prime (timed-prime-test)
     
@@ -8,8 +8,8 @@
 
     (import (chicken time))
     
-    (define (timed-prime-test number)
+    (define (timed-prime-test prime_function number)
         (newline)
         (display number)
         (newline)
-        (start-prime-test number (current-seconds))))
+        (start-prime-test prime_function number (current-seconds))))

@@ -11,11 +11,12 @@
     (import next-divisor)
 
     (define (smallest-divisor number)
-        (find-divisor (abs number) 2))
     
-    (define (find-divisor number possible-divisor)
-        (cond ((> (square possible-divisor) number) number)
+        (define (find-divisor number possible-divisor)
+            (cond ((> (square possible-divisor) number) number)
 
-              ((= (remainder number possible-divisor) 0) possible-divisor)
+                ((= (remainder number possible-divisor) 0) possible-divisor)
 
-              (else (find-divisor number (next possible-divisor))))))
+                (else (find-divisor number (next possible-divisor)))))
+        
+        (find-divisor (abs number) 2)))

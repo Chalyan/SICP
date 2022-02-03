@@ -8,11 +8,9 @@
 
     (import (chicken time))
     
-    (import is-prime)
-    
     (import report-time)
     
-    (define (start-prime-test number start-time)
-        (if (prime? number)
+    (define (start-prime-test prime_function number start-time)
+        (if (prime_function number)
             (report_time (- (current-seconds) start-time))
-            (string))))
+            "")))

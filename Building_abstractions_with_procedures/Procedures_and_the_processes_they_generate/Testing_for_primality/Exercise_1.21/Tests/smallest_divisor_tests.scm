@@ -4,7 +4,7 @@
 
 (import primality)
 
-(test-group "'Smallest divisor' tests"
+(test-group "'Smallest divisor with slow algorithm' tests"
     (test 2 (smallest-divisor 4))
     (test 3 (smallest-divisor 9))
     (test 5 (smallest-divisor 5))
