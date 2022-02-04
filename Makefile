@@ -1,6 +1,6 @@
 all_tests: chicken-module-installer square cube random-positive-number cube-root \
 		   tree-recursion-iterative tree-recursion-recursive pascals-triangle exponentiation \
-		   smallest-divisor
+		   smallest-divisor smallest-divisor-with-next-function
 
 chicken-module-installer:
 	chicken-install -s test test-generative srfi-1
@@ -39,4 +39,9 @@ exponentiation:
 
 smallest-divisor:
 	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Testing_for_primality/Exercise_1.21/Tests && \
-	$(CSI) unit_test.scm
+	$(CSI) smallest_divisor_tests.scm && $(CSI) bad_prime_tests.scm
+
+smallest-divisor-with-next-function:
+	cd Building_abstractions_with_procedures/Procedures_and_the_processes_they_generate/Testing_for_primality/Exercise_1.23/Tests && \
+	$(CSI) next_divisor_tests.scm && $(CSI) smallest_divisor_tests.scm && $(CSI) report_time_tests.scm && $(CSI) prime_tests.scm && \
+	$(CSI) start_prime_test_tests.scm
