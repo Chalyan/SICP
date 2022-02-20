@@ -1,10 +1,7 @@
-(module number-modifying-functions (increment decrement identity)
+(module number-modifying-functions (increment decrement)
     
     (import scheme)
     
-    (define (identity number)
-        number)
-
     (define (increment number)
         (+ number 1))
     

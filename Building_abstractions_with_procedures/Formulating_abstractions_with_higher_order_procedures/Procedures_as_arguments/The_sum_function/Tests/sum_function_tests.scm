@@ -1,12 +1,12 @@
 (import test)
 
 (include "../Sources/sum_function.scm")
-(include "../../../../The_elements_of_programming/Procedures_as_Black_Box_Abstractions/Cube_root_with_lexical_scoping/Cube_function/Sources/cube.scm")
 (include "../Sources/next.scm")
+(include "../../../../The_elements_of_programming/Procedures_as_Black_Box_Abstractions/Cube_root_with_lexical_scoping/Cube_function/Sources/cube.scm")
 
 (import sum-function)
 (import cube_func)
-(import square_func)xs
+(import square_func)
 (import number-modifying-functions)
 
 (test-group "'Sum function' tests for different functions"
